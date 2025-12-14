@@ -1,0 +1,974 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": [
+        "hola",
+        "buenos dias",
+        "buenas tardes",
+        "saludos",
+        "hola bot",
+        "buenas",
+        "buenas noches",
+        "hey"
+      ],
+      "responses": [
+        "¡Hola! ¿En qué puedo ayudarte con IA y Mini Robots?",
+        "¡Buenos días/tardes! ¿Tienes alguna duda sobre el curso?",
+        "¡Saludos! Estoy aquí para ayudarte.",
+        "¡Hola! Soy tu asistente para IA y Mini Robots.",
+        "Hola 👋 ¿En qué tema del curso te ayudo?"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "gracias por tu ayuda",
+        "hasta luego",
+        "nos vemos",
+        "adios",
+        "chao",
+        "gracias"
+      ],
+      "responses": [
+        "¡De nada! ¡Buena suerte con tu estudio de IA y Mini Robots!",
+        "¡Hasta luego! Si necesitas más ayuda, aquí estaré.",
+        "¡Nos vemos! ¡Que tengas un buen día!",
+        "¡Éxitos en la materia!",
+        "Hasta luego 👋",
+        "Mucho ánimo con IA y Mini Robots."
+      ]
+    },
+    {
+      "tag": "ayuda_general",
+      "patterns": [
+        "necesito ayuda",
+        "ayudame",
+        "tengo una duda",
+        "puedes ayudarme",
+        "tengo un problema"
+      ],
+      "responses": [
+        "¡Claro! ¿En qué tema de IA y Mini Robots necesitas ayuda?",
+        "Dime tu duda y tratamos de resolverla juntos.",
+        "Estoy aquí para ayudarte con el curso.",
+        "Claro, dime tu duda del curso.",
+        "¿Es sobre teoría, código o una tarea?"
+      ]
+    },
+    {
+      "tag": "redes_neuronales",
+      "patterns": [
+        "que es una red neuronal",
+        "explicame redes neuronales",
+        "como funciona una red neuronal",
+        "red neuronal artificial",
+        "neural network"
+      ],
+      "responses": [
+        "Una red neuronal es un modelo inspirado en el cerebro humano que aprende patrones a partir de datos.",
+        "Las redes neuronales usan capas de neuronas, pesos y funciones de activación para aprender.",
+        "¿Quieres una explicación teórica o un ejemplo en código?",
+        "Una red neuronal es un modelo inspirado en el cerebro humano.",
+        "Está compuesta por neuronas, pesos, sesgos y funciones de activación."
+      ]
+    },
+    {
+      "tag": "backpropagation",
+      "patterns": [
+        "que es backpropagation",
+        "como funciona el backpropagation",
+        "retropropagacion del error",
+        "ajuste de pesos red neuronal",
+        "entrenamiento de redes neuronales"
+      ],
+      "responses": [
+        "Backpropagation es el algoritmo que ajusta los pesos de una red neuronal usando el error.",
+        "La retropropagación calcula gradientes y minimiza el error mediante descenso del gradiente.",
+        "¿Quieres que lo explique paso a paso?",
+        "Backpropagation ajusta los pesos usando el error de salida.",
+        "Se basa en el cálculo de gradientes."
+      ]
+    },
+    {
+      "tag": "mlp_regressor",
+      "patterns": [
+        "que es mlpregressor",
+        "mlp regressor sklearn",
+        "red neuronal para regresion",
+        "como usar mlpregressor",
+        "que es mlp",
+        "multilayer perceptron",
+        "perceptron multicapa"
+      ],
+      "responses": [
+        "MLPRegressor es una red neuronal multicapa usada para problemas de regresión.",
+        "Se usa cuando la salida es un valor continuo o varios valores.",
+        "¿Quieres ver un ejemplo aplicado?",
+        "Un MLP es una red neuronal feedforward con una o más capas ocultas.",
+        "Los MLP se usan para clasificación y regresión."
+      ]
+    },
+    {
+      "tag": "clasificacion",
+      "patterns": [
+        "que es clasificacion",
+        "problema de clasificacion",
+        "clasificacion supervisada",
+        "modelo clasificador"
+      ],
+      "responses": [
+        "La clasificación busca asignar una clase a cada dato de entrada.",
+        "Ejemplos comunes son Iris, MNIST o Fashion-MNIST.",
+        "¿Estás usando SVM, KNN o redes neuronales?",
+        "La clasificación asigna una clase a cada entrada.",
+        "SVM, KNN y redes neuronales son clasificadores."
+      ]
+    },
+    {
+      "tag": "svm",
+      "patterns": [
+        "que es svm",
+        "support vector machine",
+        "clasificador svm",
+        "svm sklearn",
+        "svm iris"
+      ],
+      "responses": [
+        "SVM es un clasificador que busca el hiperplano que mejor separa las clases.",
+        "Funciona muy bien con datos pequeños y bien separados.",
+        "¿Quieres ayuda ajustando C o gamma?",
+        "SVM busca el hiperplano que mejor separa las clases.",
+        "Parámetros importantes: C y gamma."
+      ]
+    },
+    {
+      "tag": "knn",
+      "patterns": [
+        "que es knn",
+        "k vecinos mas cercanos",
+        "clasificador knn",
+        "como elegir k"
+      ],
+      "responses": [
+        "KNN clasifica usando los k vecinos más cercanos.",
+        "El valor de k se suele elegir con validación cruzada.",
+        "¿Quieres que te ayude a escoger el mejor k?",
+        "Es simple pero computacionalmente costoso."
+      ]
+    },
+    {
+      "tag": "arbol_decision",
+      "patterns": [
+        "que es un arbol de decision",
+        "decision tree",
+        "clasificador arbol",
+        "reglas del arbol"
+      ],
+      "responses": [
+        "Un árbol de decisión clasifica usando reglas basadas en los atributos.",
+        "Es fácil de interpretar y visualizar.",
+        "¿Quieres entender cómo leer las reglas del árbol?",
+        "Puede sobreajustar si no se limita su profundidad."
+      ]
+    },
+    {
+      "tag": "dataset_iris",
+      "patterns": [
+        "que es el dataset iris",
+        "iris dataset",
+        "datos iris",
+        "clases del iris"
+      ],
+      "responses": [
+        "El dataset Iris tiene 150 muestras y 3 clases de flores.",
+        "Cada muestra tiene 4 características numéricas.",
+        "Es muy usado para ejemplos de clasificación.",
+        "Es un dataset clásico para clasificación."
+      ]
+    },
+    {
+      "tag": "evaluacion_modelo",
+      "patterns": [
+        "como evaluar un modelo",
+        "accuracy",
+        "precision recall f1",
+        "metricas de clasificacion"
+      ],
+      "responses": [
+        "Accuracy mide el porcentaje de predicciones correctas.",
+        "Otras métricas importantes son precision, recall y F1-score.",
+        "¿Quieres que analicemos un reporte de clasificación?"
+      ]
+    },
+    {
+      "tag": "codigo_error",
+      "patterns": [
+        "tengo un error",
+        "mi codigo no funciona",
+        "me sale un error en python",
+        "error al entrenar el modelo"
+      ],
+      "responses": [
+        "Muéstrame el error o el código y lo revisamos.",
+        "Vamos paso a paso para encontrar el problema.",
+        "¿Qué mensaje de error te aparece?"
+      ]
+    },
+    {
+      "tag": "llm",
+      "patterns": [
+        "que es un modelo de lenguaje grande",
+        "llm",
+        "modelos como gpt",
+        "aplicaciones de llm",
+        "que es un llm",
+        "que significa llm",
+        "large language model",
+        "llm inteligencia artificial"
+      ],
+      "responses": [
+        "Un modelo de lenguaje grande (LLM) es un tipo de modelo de inteligencia artificial entrenado con grandes cantidades de texto.",
+        "Los LLMs, como GPT, se utilizan en aplicaciones como chatbots, traducción automática y generación de texto.",
+        "¿Quieres saber más sobre cómo funcionan o sus aplicaciones?",
+        "Un LLM es un modelo de lenguaje grande entrenado con enormes cantidades de texto.",
+        "Ejemplos de LLM son GPT, BERT y LLaMA."
+      ]
+    },
+    {
+      "tag": "mlp_vs_llm",
+      "patterns": [
+        "mlp es lo mismo que llm",
+        "diferencia entre mlp y llm",
+        "comparar mlp y llm",
+        "mlp y llm"
+      ],
+      "responses": [
+        "No, un MLP y un LLM no son lo mismo.",
+        "Un MLP es una red clásica; un LLM es un modelo de lenguaje basado en transformers.",
+        "Los LLM son mucho más grandes y especializados en texto."
+      ]
+    },
+    {
+      "tag": "regresion",
+      "patterns": [
+        "que es regresion",
+        "problema de regresion",
+        "regresion supervisada",
+        "modelo de regresion"
+      ],
+      "responses": [
+        "La regresión predice valores numéricos continuos.",
+        "Ejemplos: precios, temperatura, multiplicación de matrices.",
+        "MLPRegressor es un ejemplo de modelo de regresión."
+      ]
+    },
+    {
+      "tag": "informacion_curso",
+      "patterns": [
+        "de que trata el curso",
+        "que es ia y mini robots",
+        "objetivos del curso",
+        "contenido del curso"
+      ],
+      "responses": [
+        "El curso de IA y Mini Robots cubre conceptos de inteligencia artificial aplicados a la robótica.",
+        "Aprenderás sobre algoritmos de aprendizaje automático, redes neuronales y su implementación en mini robots.",
+        "¿Quieres saber más sobre algún tema específico del curso?"
+      ]
+    },
+    {
+      "tag": "recomendaciones_estudio",
+      "patterns": [
+        "como estudiar para el curso",
+        "recomendaciones de estudio",
+        "consejos para aprender ia",
+        "mejorar en mini robots"
+      ],
+      "responses": [
+        "Te recomiendo practicar con ejemplos de código y proyectos prácticos.",
+        "Estudia los conceptos teóricos y aplícalos en mini robots para entender mejor.",
+        "¿Quieres recursos adicionales o ejercicios para practicar?"
+      ]
+    },
+    {
+      "tag": "confirmacion",
+      "patterns": ["si", "sí", "ok", "claro", "dale", "perfecto"],
+      "responses": [
+        "Perfecto. ¿Teoría o código?",
+        "Muy bien, continuemos.",
+        "Genial, dime cómo seguimos."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": ["no entiendo", "eso no responde", "otra cosa", "no es eso", "no me sirve"],
+      "responses": [
+        "Perdón, ¿puedes reformular la pregunta?",
+        "Intentemos de otra forma.",
+        "No entendí bien, ¿puedes ser más específico?"
+      ]
+    },
+    {
+      "tag": "clustering",
+      "patterns": [
+        "que es clustering",
+        "algoritmos de clustering",
+        "tipos de clustering",
+        "k-means",
+        "agrupamiento de datos"
+      ],
+      "responses": [
+        "Clustering es el proceso de agrupar datos similares en conjuntos.",
+        "K-means es un algoritmo popular para clustering que busca minimizar la varianza dentro de los grupos.",
+        "¿Quieres un ejemplo de cómo implementar clustering en Python?"
+      ]
+    },
+    {
+      "tag": "redes_convolucionales",
+      "patterns": [
+        "que es una red convolucional",
+        "red neuronal convolucional",
+        "cnn",
+        "como funcionan las cnn"
+      ],
+      "responses": [
+        "Una red convolucional (CNN) es un tipo de red neuronal diseñada para procesar datos con una estructura de cuadrícula, como imágenes.",
+        "Las CNN utilizan capas convolucionales para extraer características de las imágenes.",
+        "¿Te gustaría ver un ejemplo de código de una CNN?"
+      ]
+    },
+    {
+      "tag": "transfer_learning",
+      "patterns": [
+        "que es transfer learning",
+        "aprendizaje por transferencia",
+        "como usar transfer learning",
+        "modelos preentrenados"
+      ],
+      "responses": [
+        "Transfer learning es una técnica que utiliza un modelo preentrenado en una tarea similar para mejorar el rendimiento en una nueva tarea.",
+        "Es útil cuando se tiene poco dato para entrenar desde cero.",
+        "¿Quieres saber cómo implementar transfer learning en Python?"
+      ]
+    },
+    {
+      "tag": "evaluacion_clasificacion",
+      "patterns": [
+        "como evaluar un modelo de clasificacion",
+        "metricas de evaluacion",
+        "accuracy vs precision",
+        "como interpretar el reporte de clasificacion"
+      ],
+      "responses": [
+        "Para evaluar un modelo de clasificación, puedes usar métricas como accuracy, precision, recall y F1-score.",
+        "Es importante entender cada métrica para interpretar correctamente el rendimiento del modelo.",
+        "¿Quieres que analicemos un ejemplo de reporte de clasificación?"
+      ]
+    },
+    {
+      "tag": "optimizacion_hiperparametros",
+      "patterns": [
+        "que es optimizacion de hiperparametros",
+        "como optimizar hiperparametros",
+        "grid search",
+        "random search"
+      ],
+      "responses": [
+        "La optimización de hiperparámetros busca encontrar la mejor configuración para un modelo.",
+        "Grid search y random search son técnicas comunes para realizar esta optimización.",
+        "¿Te gustaría ver un ejemplo de cómo implementar esto en Python?"
+      ]
+    },
+    {
+      "tag": "deep_learning",
+      "patterns": [
+        "que es deep learning",
+        "diferencia entre machine learning y deep learning",
+        "aplicaciones de deep learning"
+      ],
+      "responses": [
+        "Deep learning es una subárea de machine learning que utiliza redes neuronales profundas para aprender de grandes cantidades de datos.",
+        "Se aplica en áreas como visión por computadora, procesamiento de lenguaje natural y más.",
+        "¿Quieres saber más sobre cómo funciona deep learning?"
+      ]
+    },
+    {
+      "tag": "reinforcement_learning",
+      "patterns": [
+        "que es reinforcement learning",
+        "aprendizaje por refuerzo",
+        "agente y entorno",
+        "aplicaciones de reinforcement learning"
+      ],
+      "responses": [
+        "Reinforcement learning es un tipo de aprendizaje donde un agente aprende a tomar decisiones mediante prueba y error en un entorno.",
+        "Se utiliza en juegos, robótica y sistemas de recomendación.",
+        "¿Te gustaría un ejemplo de un algoritmo de aprendizaje por refuerzo?"
+      ]
+    },
+    {
+      "tag": "feature_engineering",
+      "patterns": [
+        "que es feature engineering",
+        "como hacer feature engineering",
+        "importancia de feature engineering"
+      ],
+      "responses": [
+        "Feature engineering es el proceso de seleccionar, modificar o crear variables que mejoren el rendimiento del modelo.",
+        "Es crucial para mejorar la precisión de los modelos de machine learning.",
+        "¿Quieres ejemplos de técnicas de feature engineering?"
+      ]
+    },
+    {
+      "tag": "data_preprocessing",
+      "patterns": [
+        "que es data preprocessing",
+        "como preparar datos",
+        "limpieza de datos",
+        "normalizacion y estandarizacion"
+      ],
+      "responses": [
+        "Data preprocessing es el proceso de preparar los datos para el análisis, incluyendo limpieza, transformación y normalización.",
+        "Es un paso fundamental antes de aplicar cualquier modelo de machine learning.",
+        "¿Te gustaría ver un ejemplo de cómo realizar data preprocessing en Python?"
+      ]
+    },
+    {
+      "tag": "model_selection",
+      "patterns": [
+        "como seleccionar un modelo",
+        "comparar modelos",
+        "mejor modelo para mi problema",
+        "evaluar diferentes modelos"
+      ],
+      "responses": [
+        "La selección de modelo implica comparar diferentes algoritmos y elegir el que mejor se adapte a tus datos y problema.",
+        "Puedes usar validación cruzada para evaluar el rendimiento de los modelos.",
+        "¿Quieres saber más sobre cómo realizar la selección de modelos?"
+      ]
+    },
+    {
+      "tag": "data_visualization",
+      "patterns": [
+        "que es data visualization",
+        "visualizacion de datos",
+        "graficos en python",
+        "como hacer graficos"
+      ],
+      "responses": [
+        "Data visualization es la representación gráfica de datos para facilitar su comprensión.",
+        "Puedes usar bibliotecas como Matplotlib y Seaborn en Python para crear gráficos.",
+        "¿Te gustaría ver ejemplos de visualización de datos?"
+      ]
+    },
+    {
+      "tag": "time_series",
+      "patterns": [
+        "que es una serie temporal",
+        "análisis de series temporales",
+        "predicción de series temporales",
+        "modelos de series temporales"
+      ],
+      "responses": [
+        "Una serie temporal es una secuencia de datos recogidos en intervalos de tiempo.",
+        "Se utiliza para predecir tendencias futuras basadas en datos pasados.",
+        "¿Quieres aprender sobre modelos como ARIMA o LSTM para series temporales?"
+      ]
+    },
+    {
+      "tag": "anomaly_detection",
+      "patterns": [
+        "que es anomaly detection",
+        "detección de anomalías",
+        "como detectar anomalías",
+        "algoritmos de detección de anomalías"
+      ],
+      "responses": [
+        "La detección de anomalías busca identificar patrones que no se ajustan a un comportamiento esperado.",
+        "Se utiliza en seguridad, monitoreo de sistemas y más.",
+        "¿Te gustaría ver ejemplos de técnicas de detección de anomalías?"
+      ]
+    },
+    {
+      "tag": "natural_language_processing",
+      "patterns": [
+        "que es procesamiento de lenguaje natural",
+        "nlp",
+        "aplicaciones de nlp",
+        "como funciona nlp"
+      ],
+      "responses": [
+        "El procesamiento de lenguaje natural (NLP) es un campo de la IA que permite a las máquinas entender y procesar el lenguaje humano.",
+        "Se utiliza en chatbots, traducción automática y análisis de sentimientos.",
+        "¿Quieres saber más sobre técnicas de NLP?"
+      ]
+    },
+    {
+      "tag": "computer_vision",
+      "patterns": [
+        "que es computer vision",
+        "visión por computadora",
+        "aplicaciones de computer vision",
+        "como funciona computer vision"
+      ],
+      "responses": [
+        "La visión por computadora es un campo de la IA que permite a las máquinas interpretar y entender el contenido visual.",
+        "Se utiliza en reconocimiento de imágenes, detección de objetos y más.",
+        "¿Te gustaría ver ejemplos de aplicaciones de visión por computadora?"
+      ]
+    },
+    {
+      "tag": "ethical_ai",
+      "patterns": [
+        "que es la IA ética",
+        "consideraciones éticas en IA",
+        "sesgos en IA",
+        "responsabilidad en IA"
+      ],
+      "responses": [
+        "La IA ética se refiere a la práctica de desarrollar y utilizar IA de manera responsable y justa.",
+        "Es importante considerar los sesgos y el impacto social de los modelos de IA.",
+        "¿Quieres discutir más sobre la ética en IA?"
+      ]
+    },
+    {
+      "tag": "reinforcement_learning_algorithms",
+      "patterns": [
+        "algoritmos de aprendizaje por refuerzo",
+        "q-learning",
+        "deep q-learning",
+        "algoritmos de RL"
+      ],
+      "responses": [
+        "Existen varios algoritmos de aprendizaje por refuerzo, como Q-learning y Deep Q-learning.",
+        "Estos algoritmos permiten a los agentes aprender a través de la interacción con el entorno.",
+        "¿Te gustaría ver un ejemplo de implementación de un algoritmo de RL?"
+      ]
+    },
+    {
+      "tag": "hyperparameter_tuning",
+      "patterns": [
+        "ajuste de hiperparámetros",
+        "como ajustar hiperparámetros",
+        "mejorar rendimiento del modelo",
+        "tuning de modelos"
+      ],
+      "responses": [
+        "El ajuste de hiperparámetros es el proceso de optimizar los parámetros de un modelo para mejorar su rendimiento.",
+        "Se pueden usar técnicas como Grid Search y Random Search.",
+        "¿Quieres ver un ejemplo de ajuste de hiperparámetros en Python?"
+      ]
+    },
+    {
+      "tag": "cloud_computing",
+      "patterns": [
+        "que es cloud computing",
+        "ventajas de la nube",
+        "servicios en la nube",
+        "como usar cloud computing"
+      ],
+      "responses": [
+        "Cloud computing se refiere a la entrega de servicios informáticos a través de Internet.",
+        "Permite el acceso a recursos y almacenamiento sin necesidad de infraestructura local.",
+        "¿Te gustaría saber más sobre servicios en la nube como AWS o Azure?"
+      ]
+    },
+    {
+      "tag": "big_data",
+      "patterns": [
+        "que es big data",
+        "características de big data",
+        "tecnologías de big data",
+        "como manejar big data"
+      ],
+      "responses": [
+        "Big data se refiere a conjuntos de datos tan grandes y complejos que requieren tecnologías especiales para su procesamiento.",
+        "Las tecnologías comunes incluyen Hadoop y Spark.",
+        "¿Quieres aprender sobre cómo trabajar con big data?"
+      ]
+    },
+    {
+      "tag": "data_science",
+      "patterns": [
+        "que es data science",
+        "roles en data science",
+        "proceso de data science",
+        "herramientas de data science"
+      ],
+      "responses": [
+        "Data science es un campo que combina estadísticas, análisis de datos y aprendizaje automático para extraer conocimiento de los datos.",
+        "Los científicos de datos utilizan herramientas como Python, R y SQL.",
+        "¿Te gustaría saber más sobre el proceso de data science?"
+      ]
+    },
+    {
+      "tag": "data_analysis",
+      "patterns": [
+        "que es data analysis",
+        "análisis de datos",
+        "como hacer análisis de datos",
+        "herramientas de análisis de datos"
+      ],
+      "responses": [
+        "El análisis de datos implica inspeccionar, limpiar y modelar datos para descubrir información útil.",
+        "Se utilizan herramientas como Pandas y NumPy en Python para el análisis de datos.",
+        "¿Quieres un ejemplo de análisis de datos en Python?"
+      ]
+    },
+    {
+      "tag": "data_wrangling",
+      "patterns": [
+        "que es data wrangling",
+        "preparación de datos",
+        "transformación de datos",
+        "limpieza de datos"
+      ],
+      "responses": [
+        "Data wrangling es el proceso de transformar y limpiar datos para prepararlos para el análisis.",
+        "Es un paso crucial en el flujo de trabajo de ciencia de datos.",
+        "¿Te gustaría ver un ejemplo de data wrangling en Python?"
+      ]
+    },
+    {
+      "tag": "feature_selection",
+      "patterns": [
+        "que es feature selection",
+        "selección de características",
+        "importancia de la selección de características",
+        "como seleccionar características"
+      ],
+      "responses": [
+        "La selección de características es el proceso de elegir un subconjunto de variables relevantes para usar en el modelo.",
+        "Ayuda a mejorar la precisión y reducir el sobreajuste.",
+        "¿Quieres aprender sobre técnicas de selección de características?"
+      ]
+    },
+    {
+      "tag": "model_evaluation",
+      "patterns": [
+        "como evaluar un modelo",
+        "metricas de rendimiento",
+        "validación cruzada",
+        "como interpretar resultados"
+      ],
+      "responses": [
+        "La evaluación del modelo implica medir su rendimiento utilizando métricas como accuracy, precision y recall.",
+        "La validación cruzada ayuda a asegurar que el modelo generaliza bien a datos no vistos.",
+        "¿Te gustaría ver un ejemplo de evaluación de modelo en Python?"
+      ]
+    },
+    {
+      "tag": "ensemble_methods",
+      "patterns": [
+        "que son métodos de ensamblaje",
+        "ensemble learning",
+        "votación y apilamiento",
+        "como usar ensemble methods"
+      ],
+      "responses": [
+        "Los métodos de ensamblaje combinan múltiples modelos para mejorar la precisión y robustez.",
+        "Ejemplos incluyen Random Forest y Gradient Boosting.",
+        "¿Quieres aprender a implementar métodos de ensamblaje en Python?"
+      ]
+    },
+    {
+      "tag": "capacidad_bot",
+      "patterns": [
+        "que puedes hacer",
+        "que sabes hacer",
+        "para que sirves",
+        "como me puedes ayudar",
+        "que funciones tienes",
+        "en que me ayudas",
+        "que haces"
+      ],
+      "responses": [
+        "Puedo ayudarte con conceptos de IA, redes neuronales, machine learning y tareas del curso.",
+        "Te ayudo a entender teoría, ejemplos y código de IA y Mini Robots.",
+        "Estoy diseñado para apoyar el curso de IA y Mini Robots."
+      ]
+    },
+    {
+      "tag": "pregunta_general",
+      "patterns": [
+        "tengo una duda",
+        "quiero preguntar algo",
+        "necesito ayuda",
+        "tengo una pregunta",
+        "me puedes ayudar",
+        "quiero aprender algo"
+      ],
+      "responses": [
+        "Dime tu duda y tratamos de resolverla juntos.",
+        "Claro, dime qué necesitas.",
+        "Adelante, ¿cuál es tu pregunta?"
+      ]
+    },
+    {
+      "tag": "red_neuronal_definicion",
+      "patterns": [
+        "que es una red neuronal",
+        "que son las redes neuronales",
+        "define red neuronal",
+        "explica que es una red neuronal",
+        "red neuronal que es",
+        "que significa red neuronal",
+        "que es una neural network"
+      ],
+      "responses": [
+        "¿Quieres una explicación teórica o un ejemplo en código?",
+        "Puedo explicarlo teóricamente o mostrarte un ejemplo práctico."
+      ]
+    },
+    {
+      "tag": "tipo_explicacion",
+      "patterns": [
+        "quiero una explicacion teorica",
+        "explicacion teorica",
+        "solo teoria",
+        "teoria",
+        "explicame la teoria",
+        "parte teorica",
+        "conceptos teoricos"
+      ],
+      "responses": [
+        "Perfecto, te daré una explicación teórica clara y sencilla.",
+        "Muy bien, vamos con la parte teórica."
+      ]
+    },
+    {
+      "tag": "explicacion_red_neuronal_teoria",
+      "patterns": [
+        "explicacion teorica de redes neuronales",
+        "teoria de redes neuronales",
+        "como funcionan las redes neuronales",
+        "explica redes neuronales",
+        "redes neuronales teoria",
+        "funcionamiento de una red neuronal"
+      ],
+      "responses": [
+        "Una red neuronal es un modelo inspirado en el cerebro humano, compuesto por neuronas artificiales organizadas en capas. Cada neurona recibe entradas, las pondera con pesos, aplica una función de activación y produce una salida. Las redes se entrenan ajustando los pesos mediante backpropagation para minimizar un error."
+      ]
+    },
+    {
+      "tag": "ejemplo_codigo",
+      "patterns": [
+        "quiero un ejemplo",
+        "ejemplo en codigo",
+        "ejemplo practico",
+        "codigo",
+        "muéstrame codigo",
+        "ejemplo en python"
+      ],
+      "responses": [
+        "Perfecto, puedo mostrarte un ejemplo en Python usando Keras o scikit-learn.",
+        "Claro, te muestro un ejemplo práctico en código."
+      ]
+    },
+    {
+      "tag": "mlp_definicion",
+      "patterns": [
+        "que es mlp",
+        "que es un mlp",
+        "mlp que es",
+        "perceptron multicapa",
+        "multilayer perceptron"
+      ],
+      "responses": [
+        "Un MLP (Multilayer Perceptron) es una red neuronal feedforward con una o más capas ocultas.",
+        "Un MLP es una red neuronal multicapa usada en clasificación y regresión."
+      ]
+    },
+    {
+      "tag": "tema_redes_neuronales",
+      "patterns": [
+        "en redes neuronales",
+        "tema redes neuronales",
+        "quiero aprender redes neuronales",
+        "ayuda con redes neuronales"
+      ],
+      "responses": [
+        "¿Quieres una explicación teórica o un ejemplo en código?",
+        "Perfecto, ¿teoría o práctica?"
+      ]
+    },
+    {
+      "tag": "curso_ia_mini_robots",
+      "patterns": [
+        "ia y mini robots",
+        "curso ia y mini robots",
+        "tema del curso",
+        "ayuda con el curso",
+        "tarea de ia y mini robots"
+      ],
+      "responses": [
+        "Puedo ayudarte con los temas del curso IA y Mini Robots.",
+        "Dime qué parte del curso necesitas reforzar."
+      ]
+    },
+    {
+      "tag": "error_general",
+      "patterns": [
+        "me sale un error",
+        "tengo un error",
+        "no funciona",
+        "algo falla",
+        "se daño",
+        "se rompio",
+        "no corre",
+        "no ejecuta",
+        "no sirve"
+      ],
+      "responses": [
+        "Cuéntame qué error te aparece y revisamos paso a paso.",
+        "¿Puedes copiar el mensaje de error para ayudarte mejor?",
+        "Veamos ese error juntos."
+      ]
+    },
+    {
+      "tag": "error_python",
+      "patterns": [
+        "error en python",
+        "python falla",
+        "python no corre",
+        "error de python",
+        "mi script no funciona",
+        "problema con python"
+      ],
+      "responses": [
+        "Python suele indicar el problema en el traceback. ¿Puedes mostrarlo?",
+        "Revisa la línea donde ocurre el error y el mensaje que aparece.",
+        "Muéstrame el error exacto y lo analizamos."
+      ]
+    },
+    {
+      "tag": "error_keyerror",
+      "patterns": [
+        "keyerror",
+        "error keyerror",
+        "me sale keyerror",
+        "keyerror patterns",
+        "keyerror tag",
+        "keyerror responses"
+      ],
+      "responses": [
+        "Un KeyError suele indicar que una clave no existe en un diccionario o JSON.",
+        "Revisa que todas las claves como 'patterns' y 'responses' estén bien escritas.",
+        "Asegúrate de que todos los intents tengan la misma estructura."
+      ]
+    },
+    {
+      "tag": "error_nltk",
+      "patterns": [
+        "error nltk",
+        "nltk no funciona",
+        "problema con nltk",
+        "tokenizer error",
+        "word_tokenize error",
+        "punkt not found"
+      ],
+      "responses": [
+        "Ese error suele resolverse descargando los recursos de NLTK.",
+        "Intenta ejecutar nltk.download('punkt').",
+        "Asegúrate de ejecutar el comando dentro de Python."
+      ]
+    },
+    {
+      "tag": "error_tensorflow",
+      "patterns": [
+        "error tensorflow",
+        "tensorflow no funciona",
+        "keras error",
+        "error keras",
+        "problema con el modelo",
+        "no carga el modelo"
+      ],
+      "responses": [
+        "TensorFlow suele mostrar advertencias que no siempre son errores.",
+        "Revisa si el modelo fue entrenado y guardado correctamente.",
+        "Muéstrame el mensaje exacto para identificar el problema."
+      ]
+    },
+    {
+      "tag": "error_entrenamiento",
+      "patterns": [
+        "no entrena",
+        "no aprende",
+        "accuracy muy baja",
+        "perdida muy alta",
+        "loss no baja",
+        "el modelo no converge"
+      ],
+      "responses": [
+        "Puede ser problema de datos, arquitectura o tasa de aprendizaje.",
+        "Revisa si tienes suficientes ejemplos por intent.",
+        "Podemos ajustar épocas, batch size o capas."
+      ]
+    },
+    {
+      "tag": "error_json",
+      "patterns": [
+        "error en json",
+        "json invalido",
+        "error de formato json",
+        "no lee el json",
+        "archivo json malo",
+        "json mal escrito"
+      ],
+      "responses": [
+        "Un error común es una coma de más o una llave mal cerrada.",
+        "Verifica que el JSON sea válido y tenga comillas correctas.",
+        "Puedes usar un validador JSON online."
+      ]
+    },
+    {
+      "tag": "confusion_usuario",
+      "patterns": [
+        "no entiendo",
+        "estoy confundido",
+        "no me queda claro",
+        "no comprendo",
+        "estoy perdido",
+        "explica mejor"
+      ],
+      "responses": [
+        "No hay problema, lo explico de otra forma.",
+        "Vamos paso a paso para que quede claro.",
+        "Dime qué parte te genera confusión."
+      ]
+    },
+    {
+      "tag": "error_streamlit",
+      "patterns": [
+        "streamlit no abre",
+        "no abre el navegador",
+        "streamlit error",
+        "no funciona streamlit",
+        "session state error",
+        "script run context"
+      ],
+      "responses": [
+        "Streamlit debe ejecutarse con el comando 'streamlit run archivo.py'.",
+        "No ejecutes Streamlit con python directamente.",
+        "Asegúrate de usar el comando correcto en la terminal."
+      ]
+    },
+    {
+      "tag": "entrada_fuera_contexto",
+      "patterns": [
+        "ajsdhaskj",
+        "123123",
+        "....",
+        "???",
+        "xxxxx",
+        "no se que decir"
+      ],
+      "responses": [
+        "Parece que el mensaje no está claro. ¿Qué necesitas?",
+        "Intenta escribir tu duda con más detalle.",
+        "Estoy aquí para ayudarte."
+      ]
+    }
+  ]
+}
